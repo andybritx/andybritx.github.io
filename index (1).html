@@ -1,114 +1,71 @@
 <!DOCTYPE html>
-<!-- Declaração obrigatória que informa ao navegador que este documento usa o padrão HTML5 -->
 <html lang="pt-BR">
-<!-- Tag raiz de todo documento HTML. O atributo "lang" define o idioma principal do conteúdo (Português do Brasil),
-     o que ajuda leitores de tela e mecanismos de busca -->
 
 <head>
-    <!-- A tag <head> contém metadados sobre o documento: informações que não aparecem diretamente na tela,
-         mas que são importantes para o navegador e para os buscadores -->
 
     <meta charset="UTF-8">
-    <!-- Define a codificação de caracteres do documento como UTF-8,
-         garantindo que acentos e caracteres especiais (ç, ã, é, etc.) sejam exibidos corretamente -->
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- Configura a responsividade básica em dispositivos móveis,
-         fazendo a largura da página se ajustar à largura da tela do aparelho -->
 
     <meta name="description" content="Sistema web acadêmico para gerenciamento de Petshop - Fase 1: Estrutura HTML">
-    <!-- Metadado descritivo sobre o conteúdo da página, usado por mecanismos de busca -->
 
     <title>Petshop Amigo Fiel - Cuidando de quem você ama</title>
-    <!-- Define o título exibido na aba do navegador -->
 </head>
 
 <body>
-    <!-- A tag <body> contém todo o conteúdo visível da página para o usuário -->
+    
 
-    <!-- ==================== CABEÇALHO ==================== -->
     <header>
-        <!-- A tag <header> representa o cabeçalho da página, normalmente contendo
-             identidade da marca (logo/nome) e o menu de navegação principal -->
 
         <h1>Petshop Amigo Fiel</h1>
-        <!-- <h1> é o título de maior nível hierárquico da página. Deve haver apenas um <h1> por página -->
 
         <p>Produtos e serviços de qualidade para o bem-estar do seu animal de estimação desde 2010.</p>
-        <!-- <p> (parágrafo) usado aqui para exibir a frase de apresentação/slogan do Petshop -->
 
         <nav>
-            <!-- A tag <nav> identifica um bloco de navegação principal do site,
-                 agrupando links de acesso às seções/páginas -->
 
             <ul>
-                <!-- <ul> (unordered list) cria uma lista não ordenada, ideal para organizar itens de menu -->
 
                 <li><a href="#home">Home</a></li>
-                <!-- <li> é um item de lista. <a> é um link (âncora). O atributo "href" com "#home"
-                     faz o link apontar para o elemento da página que possua id="home" -->
 
                 <li><a href="#produtos">Produtos</a></li>
-                <!-- Link interno para a seção de Produtos (id="produtos") -->
 
                 <li><a href="#servicos">Serviços</a></li>
-                <!-- Link interno para a seção de Serviços (id="servicos") -->
 
                 <li><a href="#contato">Contato</a></li>
-                <!-- Link interno para a seção de Contato, localizada no rodapé (id="contato") -->
             </ul>
         </nav>
     </header>
 
-    <!-- ==================== CONTEÚDO PRINCIPAL ==================== -->
     <main>
-        <!-- A tag <main> representa o conteúdo principal e único da página,
-             excluindo elementos repetidos como cabeçalho, rodapé e menus -->
+
 
         <section id="home">
-            <!-- <section> agrupa um conjunto de conteúdo relacionado a um mesmo tema.
-                 O atributo "id" permite que o link do menu (#home) aponte para este bloco -->
 
             <h2>Bem-vindo ao Petshop Amigo Fiel</h2>
-            <!-- <h2> é um subtítulo, hierarquicamente abaixo do <h1> -->
 
             <p>Confira abaixo nossas categorias de produtos e os serviços que oferecemos para o seu pet.</p>
         </section>
 
-        <!-- ==================== SEÇÃO DE PRODUTOS ==================== -->
         <section id="produtos">
-            <!-- Seção que reúne todas as categorias e produtos do Petshop -->
 
             <h2>Nossos Produtos</h2>
 
-            <!-- ---------- CATEGORIA 1: RAÇÃO ---------- -->
             <article>
-                <!-- <article> representa um conteúdo independente e autocontido,
-                     neste caso, uma categoria de produtos -->
 
                 <h3>Categoria: Ração</h3>
-                <!-- <h3> é um subtítulo de nível 3, usado para o nome da categoria -->
 
-                <!-- Produto 1 da categoria Ração -->
                 <section>
-                    <!-- <section> usada aqui para agrupar as informações de um único produto -->
 
                     <h4>Ração Premium para Cães Adultos</h4>
-                    <!-- <h4> é o subtítulo de nível 4, usado para o nome do produto -->
 
                     <img src="racao-caes-adultos.jpg" alt="Pacote de ração premium para cães adultos, sabor carne, pacote de 15kg">
-                    <!-- <img> exibe uma imagem. O atributo "src" indica o caminho do arquivo de imagem
-                         e o atributo "alt" (obrigatório) descreve a imagem textualmente,
-                         sendo essencial para acessibilidade e para quando a imagem não carrega -->
+
 
                     <p>Ração completa e balanceada, indicada para cães adultos de todas as raças, pacote de 15kg.</p>
-                    <!-- Descrição curta do produto -->
 
                     <p>Valor: R$ 189,90</p>
-                    <!-- Valor do produto -->
                 </section>
 
-                <!-- Produto 2 da categoria Ração -->
                 <section>
                     <h4>Ração para Gatos Filhotes</h4>
 
@@ -120,11 +77,9 @@
                 </section>
             </article>
 
-            <!-- ---------- CATEGORIA 2: HIGIENE ---------- -->
             <article>
                 <h3>Categoria: Higiene</h3>
 
-                <!-- Produto 1 da categoria Higiene -->
                 <section>
                     <h4>Shampoo Neutro para Pets</h4>
 
@@ -135,7 +90,6 @@
                     <p>Valor: R$ 34,90</p>
                 </section>
 
-                <!-- Produto 2 da categoria Higiene -->
                 <section>
                     <h4>Tapete Higiênico</h4>
 
@@ -147,11 +101,9 @@
                 </section>
             </article>
 
-            <!-- ---------- CATEGORIA 3: ACESSÓRIOS ---------- -->
             <article>
                 <h3>Categoria: Acessórios</h3>
 
-                <!-- Produto 1 da categoria Acessórios -->
                 <section>
                     <h4>Coleira Ajustável</h4>
 
@@ -162,7 +114,7 @@
                     <p>Valor: R$ 29,90</p>
                 </section>
 
-                <!-- Produto 2 da categoria Acessórios -->
+
                 <section>
                     <h4>Caixa de Transporte</h4>
 
@@ -180,10 +132,9 @@
             <h2>Nossos Serviços</h2>
 
             <ul>
-                <!-- Lista não ordenada usada para organizar os serviços oferecidos -->
 
                 <li>
-                    <!-- Cada <li> representa um serviço, com sua descrição, valor e disponibilidade de tele-busca -->
+
                     <h3>Banho Completo</h3>
                     <p>Descrição: Banho com shampoo neutro, secagem e escovação.</p>
                     <p>Valor: R$ 60,00</p>
@@ -216,18 +167,14 @@
 
     <!-- ==================== RODAPÉ ==================== -->
     <footer>
-        <!-- A tag <footer> representa o rodapé da página, geralmente com informações
-             de encerramento como direitos autorais, contato e links auxiliares -->
 
         <section>
             <h2>Sobre</h2>
             <p>&copy; 2026 Petshop Amigo Fiel. Todos os direitos reservados.</p>
-            <!-- "&copy;" é uma entidade HTML que representa o símbolo de copyright (©) -->
             <p>Projeto acadêmico desenvolvido para fins de estudo em desenvolvimento web.</p>
         </section>
 
         <section id="contato">
-            <!-- Este id="contato" recebe o link "Contato" do menu de navegação do cabeçalho -->
 
             <h2>Contato</h2>
 
@@ -235,12 +182,10 @@
                 <!-- <address> é a tag semântica correta para informações de contato/endereço -->
 
                 <p>E-mail: <a href="mailto:contato@petshopamigofiel.com.br">contato@petshopamigofiel.com.br</a></p>
-                <!-- O atributo "href" com "mailto:" abre o programa de e-mail padrão do usuário -->
 
-                <p>Telefone: <a href="tel:+555132223333">(51) 3222-3333</a></p>
-                <!-- O atributo "href" com "tel:" permite iniciar uma ligação em dispositivos compatíveis -->
+                <p>Telefone: <a href="tel:+555112345-6789">(51) 3222-3333</a></p>
 
-                <p>Endereço: Rua dos Pets, nº 123 - Bairro Centro - Cachoeirinha/RS - CEP 94900-000</p>
+                <p>Endereço: Rua dos Pets, nº 123 - PUCRS - Porto Alegre/RS - CEP 1000-000</p>
             </address>
         </section>
 
